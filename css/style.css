@@ -443,7 +443,7 @@ a {
     display: grid;
     grid-template-areas: "encabezado" "navegador" "texto" "footer" "dev";
     grid-template-columns: 100vw;
-    grid-template-rows: 500px 55px auto auto auto; }
+    grid-template-rows: 250px 55px   auto auto; }
     .index .encabezado {
       grid-area: encabezado; }
     .index .navegador {
@@ -459,7 +459,7 @@ a {
     display: grid;
     grid-template-areas: "encabezado encabezado" "navegador navegador" "mapa formulario" "footer footer" "dev dev";
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 500px 55px auto auto auto; }
+    grid-template-rows: 250px 55px auto auto auto; }
     .buscador .encabezado {
       grid-area: encabezado; }
     .buscador .navegador {
@@ -486,7 +486,7 @@ a {
     display: grid;
     grid-template-areas: "encabezado" "navegador" "titulo__compra" "carousel" "footer" "dev";
     grid-template-columns: 100vw;
-    grid-template-rows: 500px 55px 200px auto auto auto; }
+    grid-template-rows: 250px 55px 200px auto auto auto; }
     .compra .encabezado {
       grid-area: encabezado; }
     .compra .navegador {
@@ -504,7 +504,7 @@ a {
     display: grid;
     grid-template-areas: "encabezado" "navegador" "titutlo__alquiler" "alquiler" "footer" "dev";
     grid-template-columns: 100vw;
-    grid-template-rows: 500px 55px 270px auto auto auto; }
+    grid-template-rows: 250px 55px 270px auto auto auto; }
     .alquiler .encabezado {
       grid-area: encabezado; }
     .alquiler .navegador {
@@ -694,7 +694,8 @@ a {
       justify-content: space-evenly;
       transform: translateX(0); } }
   .nav--show {
-    transform: translateX(0); }
+    transform: translateX(0);
+    position: relative; }
   .nav__item {
     padding: 1em;
     text-align: center;

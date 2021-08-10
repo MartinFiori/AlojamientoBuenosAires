@@ -57,6 +57,7 @@ $height:4px;
     }
         &--show{
             transform: translateX(0);
+            position: relative;
         }
         &__item{
             padding: 1em;
