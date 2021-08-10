@@ -1,0 +1,34 @@
+@mixin general {
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0px;
+    box-sizing: border-box;
+}
+
+
+@mixin cover {
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// ========== Font & Weights ==========//
+
+@mixin main-100{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+@mixin main-500{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+@mixin main-700 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+@mixin smurf-100 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}

@@ -1,0 +1,25 @@
+@import "mixin.scss";
+@import "variables.scss";
+
+*{
+    @include general;
+    font-family: $main;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: $lemon;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}

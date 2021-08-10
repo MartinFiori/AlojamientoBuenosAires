@@ -1,0 +1,12 @@
+.texto{
+    margin: 2rem 0.5rem;
+    overflow-x: hidden;
+    & p{
+        color: $blue;
+        font-family: $smurf;
+        font-size: clamp(16px, 2vw, 20px);
+        text-align: center;
+        line-height: 2em;
+        margin-bottom: 1em;
+    }
+}

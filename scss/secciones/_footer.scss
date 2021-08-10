@@ -1,0 +1,28 @@
+.footer__icons{
+    font-size: 60px;
+    color: #fff;
+    padding: 1rem;
+    opacity: .5;
+    transition: all 500ms ease,;
+}
+
+.footer{
+    background-color: $blue;
+}
+.linksFooter h3, .linksFooter a, .linksfooter li{
+    @include main-500;
+    color: #fff;
+    font-size: clamp(1.8rem,3vw,2.2rem);
+    margin: .6em;
+}
+
+.linksFooter li{
+    padding: 0.3em;
+}
+
+.linksFooter a{
+    @include main-500;
+    font-size: clamp(1.4rem,3vw,1.8rem);
+    opacity: .5;
+    transition: all 1000ms ease;
+}

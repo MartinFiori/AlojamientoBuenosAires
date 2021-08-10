@@ -1,0 +1,81 @@
+@import "../variables/variables.scss";
+@import "../variables/mixin.scss";
+
+.mapa iframe{
+    margin: 1.4em 0;
+    width: 100vw;
+    height: 30rem;
+}
+
+.buscador__formulario *{
+    margin: 0px 2em .5em;
+}
+
+.formulario__titulo{
+    font-size: clamp(2.5rem,7vw, 4rem);
+    color: $blue;
+    @include main-700;
+    margin: 1.4em 0.5em;
+}
+
+// ========== Start Estructura del formulario metiendo display block
+.buscador__formulario label{
+    font-size: clamp(1.8rem,3vw,2.2rem);
+    &:nth-child(2){
+        margin: .7em 1em 1rem;
+    & select{
+        padding: .6em;
+        border: 1px solid $blue;
+        color: #000;
+        border-radius: 15px;
+        outline: none;
+    }
+    }
+    &:nth-child(4){
+        display: block;
+        text-align: start;
+    }
+    &:nth-child(5){
+        display: block;
+        text-align: start;
+    }
+    & .date{
+        padding: .6em;
+        border: 1px solid $blue;
+        color: #000;
+        border-radius: 15px;
+        outline: none;
+    }
+}
+
+
+// ========== End Estructura del formulario metiendo display block
+
+
+.buscador__formulario h4{
+    font-size: clamp(1.8rem,3vw,2.2rem);
+    @include main-500;
+}
+
+
+.buscador__texto{
+    font-size: clamp(18px, 3vw,22px);
+    text-align: center;
+}
+
+
+
+.buscador__button{
+    font-size: clamp(14px, 5vw, 18px);
+    margin: .7em auto;
+    padding: .6em;
+    color: #fff;
+    border: none;
+    background-color: $blue;
+    border-radius: 5px;
+    cursor: pointer;
+        &:hover{
+            opacity: .9;
+        }
+}
+

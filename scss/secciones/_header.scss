@@ -1,0 +1,30 @@
+@each $bg in barrionorte, caballito, microcentro, recoleta, palermo {
+    .#{bg}-maps{
+        background-image: url(../../assets/maps/#{bg}.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@each $encabezado in alquiler, buscador, compra, contacto, index, login{
+    .#{$encabezado}-bg{
+        background-image: url(../../assets/mobile/#{$encabezado}.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250px;
+        background-color: rgba(0, 0, 0, .4);
+        background-blend-mode:hard-light;
+    }
+}
+
+
+.header__title, .header__subtitle{
+    font-size: 2.7rem;
+    font-size: clamp(2.7rem, 5vw, 5rem);
+    color: $red;
+    @include main-500
+}
+
+.header__subtitle{
+    font-size: clamp(2.2rem,5vw,4rem);
+    margin-top: .5em;
+}

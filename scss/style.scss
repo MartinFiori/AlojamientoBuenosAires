@@ -1,0 +1,30 @@
+// ========== Pages ========== //
+@import "./pages/alquiler";
+@import "./pages/buscador.scss";
+@import "./pages/compra.scss";
+@import "./pages/contacto.scss";
+@import "./pages/index.scss";
+
+
+// ========== Variables & Generales ========== //
+@import "./variables/general.scss";
+@import "./variables/mixin.scss";
+@import "./variables/variables.scss";
+
+
+// ========== Responsive ========== //
+@import "./responsive/mediaquery";
+
+
+// ========== Estructura del HTML ========== //
+@import "./estructura/flexbox/flex-box";
+@import "./estructura/mobile/grid";
+@import "./estructura/pc/grid";
+
+
+// ========== Secciones Generales ========== //
+@import "./secciones/developer.scss";
+@import "./secciones/footer.scss";
+@import "./secciones/menu.scss";
+@import "./secciones/header.scss";
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Buscar departamentos Buenos Aires Alquiler ubicación fecha disponibilidad">
+    <meta name="description" content="Busca la ubicación del alquiler que necesitas">
+    <!--========== TITLE & ICON ==========-->
+    <title>Buscador - Alojamiento Buenos Aires</title>
+    <link rel="icon" href="./assets/icons/depto.ico">
+    <!--========== Google Fonts ==========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100;500;700&family=Style+Script&display=swap" rel="stylesheet">
+    <!--========== Font Awesome ==========-->
+    <script src="https://kit.fontawesome.com/6050990e90.js" crossorigin="anonymous"></script>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!--========== Start Grid ==========-->
+<div class="buscador">
+    <!--========== Start Header ==========-->
+    <div class="encabezado">
+        <header class="header buscador-bg header--flex">
+            <h1 class="header__title">Buscador</h1>
+        </header>
+    </div>
+    <!--========== End Header ==========-->
+    <!--========== Start Menú ==========-->
+    <div class="navegador">
+        <div class="top-bar">
+            <div class="icon-menu" id="icon-menu">
+                <div class="icon-menu__bar"></div>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav" id="main-menu">
+                <li class="nav__item"><a href="./index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__link--activado">Buscador</a></li>
+                <li class="nav__item"><a href="./compra.html" class="nav__link">Venta/Compra</a></li>
+                <li class="nav__item"><a href="./alquiler.html" class="nav__link">Alquiler</a></li>
+                <li class="nav__item"><a href="./contacto.html" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--========== End Menu ==========-->
+    <!--========== Start Table ==========-->
+    <!--===== Start Google Map =====-->
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5993748042974!2d-58.51831068429863!3d-34.61429076556553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d6434e87d9%3A0xbbafeb2b065a3037!2sCarcel%20Devoto!5e0!3m2!1ses-419!2sar!4v1623805115888!5m2!1ses-419!2sar" class="buscadorMap" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <!--===== End Google Map =====-->
+    <form action="#" class="buscador__formulario">
+        <!-- == Start Table Title == -->
+        <h3 class="formulario__titulo buscador__formulario--style">Busque el alojamiento que más se acomode a sus necesidades:</h3>
+        <!-- == End Table Title == -->
+        <!-- == Start Formulario == -->
+        <!--Start Select-->
+        <label class="buscador__texto buscador__formulario--style" for="pais">País en donde busca alojarse:
+            <select name="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Haití">Haití</option>
+                <option value="Honduras">Honduras</option>
+                <option value="México">México</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Panamá">Panamá</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Perú">Perú</option>
+                <option value="República Dominicana">República Dominicana</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Venezuela">Venezuela</option>
+            </select>
+        </label>
+        <!--End Select-->
+        <!--Start Radio-->
+        <h4>¿Para cuántas personas?</h4>
+        <label class="buscador__texto buscador__formulario--style" for="cant-personas"> 2 personas
+            <input type="radio" id="cant-personas">
+        </label>
+        <label class="buscador__texto buscador__formulario--style" for="cant-personas"> 4 personas
+            <input type="radio" id="cant-personas">
+        </label>
+        <!--End Radio-->
+        <!--Start fecha-->
+            <label class="buscador__texto buscador__formulario--style" for="">Indique la fecha de ingreso:
+                <input type="date" class="date">
+            </label>
+            <!--End Fecha-->
+            <!--Start botones-->
+            <div class="buscador__texto">
+                <input type="submit" class="buscador__button" value=" Aplicar filtro de búsqueda">
+                <input type="reset" class="buscador__button" value="Resetear filtro de búsqueda">
+            </div>
+            <!--End botones-->
+            <!--== End Formulario ==-->
+        </form>
+        <!--========== End Table ==========-->
+        <!--========== Start Footer ==========-->
+        <footer class="footer footer--flex">
+            <!-- == Start Links == -->
+            <div class="linksFooter">
+                <h3>¿Necesita ayuda?</h3>
+                <ul>
+                    <li><a href="#">Publicá tu inmueble</a></li>
+                    <li><a href="#">Hágase afiliado</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="https://www.instagram.com/s0phics_/" target="_blank">Fotografía</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="./pages/contacto.html">Contáctenos</a></li>
+                </ul>
+            </div>
+            <!-- == End Links == -->
+            <!-- == Start Redes == -->
+            <aside>
+                <ul>
+                    <li><a href="https://www.instagram.com/martin_fiori1/" target="_blank"><i class="footer__icons fab fa-instagram-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/martin_fiori1/" target="_blank"><i class="footer__icons fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/martin_fiori1/" target="_blank"><i class="footer__icons fab fa-twitter-square"></i></a></li>
+                </ul>
+            </aside>
+            <!-- == End Redes == -->
+        </footer>
+    <!--========== End Footer ==========-->
+    <!--========== Start Developer ==========-->
+    <div class="dev-section">
+        <p>Web developed by <strong>Martín Fiori</strong> </p>
+        <div class="container-dev">
+            <li><a href="https://www.instagram.com/martin_fiori1/" target="_blank"><span class="icons-dev fab fa-instagram"></span></a></li>
+            <li><a href="https://twitter.com/MartnFiori1" target="_blank"><span class="icons-dev fab fa-twitter"></span></a></li>
+            <li><a href="https://github.com/MartinFiori" target="_blank"><span class="icons-dev fab fa-github"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/martin-fiori-551669144/" target="_blank"><span class="icons-dev fab fa-linkedin"></span></a></li>
+        </div>
+    </div>
+    <!--========== End Developer ==========-->
+</div>
+<!--========== End Grid ==========-->
+<script src="./javascript/app.js"></script>
+</body>
+</html>

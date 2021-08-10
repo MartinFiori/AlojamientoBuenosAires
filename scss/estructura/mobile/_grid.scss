@@ -1,0 +1,157 @@
+// ========== Start Index ==========//
+.index{
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "navegador"
+    "texto"
+    "footer"
+    "dev";
+    grid-template-columns: 100vw;
+    grid-template-rows: 250px 55px auto 270px auto;
+        & .encabezado{
+            grid-area: encabezado;
+        }
+        & .navegador{
+            grid-area: navegador;
+        }
+        & .texto{
+            grid-area: texto;
+        }
+        & .footer{
+            grid-area: footer;
+        }
+        & .dev-section{
+            grid-area: dev;
+        }
+}
+
+
+
+// ========== End Index ==========//
+// ========== Start Buscador ==========//
+.buscador{
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "navegador"
+    "mapa"
+    "formulario"    
+    "footer"
+    "dev";
+    grid-template-columns: 100vw;
+    grid-template-rows: 250px 55px auto auto 270px auto;
+        & .encabezado{
+            grid-area: encabezado;
+        }
+        & .navegador{
+            grid-area: navegador;
+        }
+        & .mapa{
+            grid-area: mapa;
+        }
+        & .buscador__formulario{
+            grid-area: formulario;
+        }
+        & .footer{
+            grid-area: footer;
+        }
+        & .dev-section{
+            grid-area: dev;
+        }
+}
+// ========== End Buscador ==========//
+// ========== Start Compra ==========//
+.compra{
+    display: grid;
+    grid-template-areas:
+    "encabezado"
+    "navegador"
+    "titulo__compra"
+    "carousel"
+    "footer"
+    "dev";
+    grid-template-columns: 100vw;
+    grid-template-rows: 250px 55px 200px auto 270px auto;
+        & .encabezado{
+            grid-area: encabezado;
+        }
+        & .navegador{
+            grid-area: navegador;
+            z-index: 1000;
+        }
+        & .compra__titulo{
+            grid-area: titulo__compra;
+        }
+        & .containerCarrousel{
+            grid-area: carousel;
+        }
+        & .footer{
+            grid-area: footer;
+            width: 100vw;
+        }
+        & .dev-section{
+            grid-area: dev;
+        }
+}
+// ========== End Compra ==========//
+// ========== Start Alquiler ==========//
+.alquiler{
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "navegador"
+    "titutlo__alquiler"
+    "alquiler"
+    "footer"
+    "dev";
+    grid-template-columns: 100vw;
+    grid-template-rows: 250px 55px 270px auto 270px auto;
+        & .encabezado{
+            grid-area: encabezado;
+        }
+        & .navegador{
+            grid-area: navegador;
+            z-index: 1000;
+        }
+        & titulo__alquiler{
+            grid-area: titulo__alquiler;
+        }
+        & .container-alquiler{
+            grid-area: alquiler;
+        }
+        & .footer{
+            grid-area: footer;
+        }
+        & .dev-section{
+            grid-area: dev;
+        }
+}
+// ========== End Alquiler ==========//
+// ========== Start Contacto ==========//
+.contacto{
+    display: grid;
+    grid-template-areas: 
+    // "encabezado"
+    "navegador"
+    "contacto"
+    "footer"
+    "dev";
+    grid-template-columns: 100vw;
+    grid-template-rows: 40px auto 270px auto;
+    overflow-x: hidden;
+        & .navegador{
+            grid-area: navegador;
+        }
+        & .contacto__form{
+            grid-area: contacto;
+        }
+        & .footer{
+            grid-area: footer;
+        }
+        
+        & .dev-section{
+            grid-area: dev;
+        }
+}
+// ========== End Contacto ==========//

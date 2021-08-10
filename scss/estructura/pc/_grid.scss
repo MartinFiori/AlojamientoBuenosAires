@@ -1,0 +1,229 @@
+// ========== Start Media ==========//
+@media screen and (min-width: 768px){
+    
+    // ========== Start Index ==========//
+    .index{
+        display: grid;
+        grid-template-areas: 
+        "encabezado"
+        "navegador"
+        "texto"
+        "footer"
+        "dev";
+        grid-template-columns: 100vw;
+        grid-template-rows: 200px 55px auto auto auto;
+            & .encabezado{
+                grid-area: encabezado;
+            }
+            & .navegador{
+                grid-area: navegador;
+            }
+            & .texto{
+                grid-area: texto;
+                margin: 60px 40px;
+            }
+            & .footer{
+                grid-area: footer;
+            }
+            & .dev-section{
+                grid-area: dev;
+            }
+    }
+    // ========== End Index ==========//
+    // ========== Start Buscador ==========//
+    .buscador{
+        display: grid;
+        grid-template-areas: 
+        "encabezado encabezado"
+        "navegador navegador"
+        "mapa formulario"
+        "footer footer"
+        "dev dev";
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 500px 55px auto auto auto;
+            & .encabezado{
+                grid-area: encabezado;
+            }
+            & .navegador{
+                grid-area: navegador;
+            }
+            & .mapa{
+                grid-area: mapa;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                    & iframe{
+                        width: 100%;
+                        height: 500px;
+                        margin-left: 10px;
+                    }
+            }
+            & .buscador__formulario{
+                grid-area: formulario;
+                    & .buscador__texto{
+                        margin-top: 30px;
+                    }
+            }
+            & .footer{
+                grid-area: footer;
+            }
+            & .dev-section{
+                grid-area: dev;
+            }
+    }
+    // ========== End Buscador ==========//
+    // ========== Start Compra ==========//
+    .compra{
+        display: grid;
+        grid-template-areas:
+        "encabezado"
+        "navegador"
+        "titulo__compra"
+        "carousel"
+        "footer"
+        "dev";
+        grid-template-columns: 100vw;
+        grid-template-rows: 500px 55px 200px auto auto auto;
+            & .encabezado{
+                grid-area: encabezado;
+            }
+            & .navegador{
+                grid-area: navegador;
+                z-index: 1000;
+            }
+            & .compra__titulo{
+                grid-area: titulo__compra;
+            }
+            & .containerCarrousel{
+                grid-area: carousel;
+            }
+            & .footer{
+                grid-area: footer;
+            }
+            & .dev-section{
+                grid-area: dev;
+            }
+    }
+    // ========== End Compra ==========//
+    // ========== Start Alquiler ==========//
+    .alquiler{
+        display: grid;
+        grid-template-areas: 
+        "encabezado"
+        "navegador"
+        "titutlo__alquiler"
+        "alquiler"
+        "footer"
+        "dev";
+        grid-template-columns: 100vw;
+        grid-template-rows: 500px 55px 270px auto auto auto;
+            & .encabezado{
+                grid-area: encabezado;
+            }
+            & .navegador{
+                grid-area: navegador;
+                z-index: 1000;
+            }
+            & titulo__alquiler{
+                grid-area: titulo__alquiler;
+            }
+            & .container-alquiler{
+                grid-area: alquiler;
+            }
+            & .footer{
+                grid-area: footer;
+            }
+            & .dev-section{
+                grid-area: dev;
+            }
+    }
+    // ========== End Alquiler ==========//
+    // ========== Start Contacto ==========//
+    .contacto{
+        display: grid;
+        grid-template-areas: 
+        // "encabezado"
+        "navegador"
+        "contacto"
+        "footer"
+        "dev";
+        grid-template-columns: 100vw;
+        grid-template-rows: 40px auto auto auto;
+        overflow-x: hidden;
+            & .navegador{
+                grid-area: navegador;
+            }
+            & .contacto__form{
+                grid-area: contacto;
+            }
+            & .footer{
+                grid-area: footer;
+            }
+            
+            & .dev-section{
+                grid-area: dev;
+            }
+    }
+    // ========== End Contacto ==========//
+
+.encabezado .index-bg,
+.encabezado .buscador-bg,
+.encabezado .compra-bg,
+.encabezado .alquiler-bg{
+    height: 100%;
+}
+
+.index footer,
+.contacto footer,
+.compra footer,
+.buscador footer,
+.alquiler footer
+{
+    padding: 4rem 0px;
+}
+
+.footer{
+        & aside ul{
+            display: flex;
+            flex-direction: row;
+                & li{
+                    padding: 2em;
+                }
+        }
+    &__icons:hover{
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+    & .linksFooter a:hover{
+        opacity: 1;
+    }
+}
+
+
+
+.nav__link{
+    position: relative;
+        &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        background: $blue;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease;
+        }
+}
+.nav__link:hover::after{
+    transform:scaleX(1);
+    transform-origin: left;
+}
+
+
+
+}
+// ========== End Media Query ==========//

@@ -1,0 +1,21 @@
+.header--flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer--flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu--flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
