@@ -5,6 +5,8 @@
     @include general;
     font-family: $main;
     scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
 
 html{
@@ -14,12 +16,4 @@ html{
 
 body{
     background-color: $lemon;
-}
-
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
 }
